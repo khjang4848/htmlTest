@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>임수민 만세</title>
+    <style>
+        div {
+            margin: 50px auto;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background: #99cc99;
+            font-size: 14px;
+            transition: all ease 1s;
+        }
+
+        span {
+            display: block;
+        }
+
+        .box01:hover {
+            transform: rotate(45deg);
+            transform-origin: 50% 50%;
+        }
+
+        .box02:hover {
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        .box03:hover {
+            transform: rotate(45deg);
+            transform-origin: 100% 0;
+        }
+
+        .box04:hover {
+            transform: rotate(45deg);
+            transform-origin: 0 100%;
+        }
+
+        .box05:hover {
+            transform: rotate(45deg);
+            transform-origin: 0 0;
+        }
+    </style>
+</head>
+<body>
+    <span>transform-origin TEST</span>
+    <div class="box01">(50%,50%)</div>
+    <div class="box02">(100%,100%)</div>
+    <div class="box03">(100% 0)</div>
+    <div class="box04">(0,100%)</div>
+    <div class="box05">(0,0)</div>
+</body>
+</html>

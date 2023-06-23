@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes big {
+            from {
+                width: 20px; height: 20px;
+            }
+
+            to {
+                width: 200px; height: 200px;
+            }
+        }
+
+        .kh {
+            margin: 30px auto;
+            width: 20px;
+            height: 20px;
+            background: orange;
+            animation-name: big;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="kh"></div>
+</body>
+</html>

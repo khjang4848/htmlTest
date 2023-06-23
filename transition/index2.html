@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Consolas, monospace;
+        }
+
+        .jb {
+            box-sizing: border-box;
+            width: 64px;
+            height: 64px;
+            margin: 10px 0;
+            background: orange;
+            transition-duration: 4s;
+        }
+
+        input:checked ~ .jb {
+            width: 100%;
+            border-radius: 20px;
+            background: red;
+        }
+
+        .jb1 {
+            transition-property: all;
+        }
+        .jb2 {
+            transition-property: width, background-color;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" >
+    <p>transition-property: all</p>
+    <div class="jb jb1"></div>
+    <p>transition-property: width, background-color</p>
+    <div class="jb jb2"></div>
+</body>
+</html>

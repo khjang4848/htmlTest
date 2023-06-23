@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes run {
+            from { width: 100px;}
+            to {width: 100%}
+        }
+
+        .kh {
+            width: 100px;
+            height: 40px;
+            background: orange;
+            margin: 10px 0;
+            animation-name: run;
+            animation-duration: 3s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .kh1 {
+            animation-timing-function: linear;
+        }
+        .kh2 {
+            animation-timing-function: ease;
+        }
+        .kh3 {
+            animation-timing-function: ease-in;
+        }
+        .kh4 {
+            animation-timing-function: ease-out;
+        }
+        .kh5 {
+            animation-timing-function: ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="kh kh1">linear</div>
+    <div class="kh kh2">ease</div>
+    <div class="kh kh3">ease-in</div>
+    <div class="kh kh4">ease-out</div>
+    <div class="kh kh5">ease-in-out</div>
+</body>
+</html>

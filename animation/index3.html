@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes run {
+            from { width: 10%;}
+            to {width: 100%;}
+        }
+
+        .kh {
+            margin: 10px 0;
+            width: 50%;
+            height: 50px;
+            background: orange;
+            animation-name: run;
+            animation-delay: 0.5s;
+            animation-duration: 2s;
+        }
+
+        .kh1 {
+            animation-fill-mode: none;
+        }
+        .kh2 {
+            animation-fill-mode: forwards;
+        }
+        .kh3 {
+            animation-fill-mode: backwards;
+        }
+        .kh4 {
+            animation-fill-mode: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="kh kh1">none</div>
+    <div class="kh kh2">forwords</div>
+    <div class="kh kh3">backwords</div>
+    <div class="kh kh4">both</div>
+</body>
+</html>

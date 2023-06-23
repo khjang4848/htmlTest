@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .toggleSwitch {
+        width: 100px;
+        height: 50px;
+        display: block;
+        position: relative;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+        cursor: pointer;
+        margin: 30px;
+    }
+
+    .toggleSwitch .toggleButton {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #f03d3d;
+    }
+
+    #toggle:checked ~ .toggleSwitch {
+        background: #f03d3d;
+    }
+
+    #toggle:checked ~ .toggleSwitch .toggleButton {
+        left: calc(100% - 44px);
+        background: #fff;
+    }
+
+    .toggleSwitch, .toggleButton {
+        transition: all 0.2s ease-in;
+    }
+
+    /* checked 부분을 active란 클래스가 포함되어있는지 여부로 바꾸기 */
+    .toggleSwitch.active {
+        background: #f03d3d;
+    }
+
+    .toggleSwitch.active .toggleButton {
+        left: calc(100% - 44px);
+        background: #fff;
+    }
+</style>
+<body>
+    <input type="checkbox" id="toggle" hidden>
+    <label for="toggle" class="toggleSwitch">
+        <span class="toggleButton"></span>
+    </label>
+</body>
+</html>

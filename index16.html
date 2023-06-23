@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .jb {
+            width:400px;
+            height: 400px;
+            margin: 40px auto;
+            border: 10px solid #dadada;
+            position: relative;
+        }
+
+        .jb:before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            display:block;
+            width: 10px;
+            height:10px;
+            background: #444444;
+            transition: all linear 0.5s;
+        }
+
+        .jb:hover:before {
+            width: 400px;
+        }
+
+        .jb:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #444444;
+            transition: all linear 0.5s;
+        }
+        .jb:hover:after {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jb"></div>
+</body>
+</html>

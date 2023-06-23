@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .kh {
+            margin: 10px 0px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        @keyframes run {
+            from {
+                width: 100px;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        .kh1 {
+            animation-name: run;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+        }
+        input:checked + div {
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" >
+    <div class="kh kh1"></div>
+</body>
+</html>
