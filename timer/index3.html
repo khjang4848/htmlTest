@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bettingStatistics--72469 {
+            position:absolute;
+            top:10px;
+            transition:transform .45s ease-in-out;
+            left: 10px;
+            transform-origin: 0 0;
+        }
+
+        .indicatorPercentage--b2c08 {
+            font-size:2.8rem;
+            font-weight:800;
+            left:50%;
+            position:absolute;
+            top:50%;
+            font-family: sans-serif;
+            transform:translate(-50%,-50%)
+        }
+    </style>
+</head>
+
+<body>
+<div class="bettingStatistics--72469">
+    <svg data-total-percent="58" width="105" height="105" viewBox="0 0 108 108" >
+        <defs>
+            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="background_Player0.49709964070862545_id_gradient">
+                <stop stop-color="#000" stop-opacity="0.7" offset="0%"></stop>
+                <stop stop-color="#000" stop-opacity="0.7" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <circle cx="54" cy="54" r="51" fill="url(#background_Player0.49709964070862545_id_gradient)"></circle>
+        <circle cx="54" cy="54" r="45" stroke-width="12" fill="none" stroke="#009600" stroke-opacity="0.1"></circle>
+        <circle id="circle11" cx="54" cy="54" r="45" stroke-width="12" fill="none" stroke="#009600" stroke-dashoffset="0"
+                stroke-dasharray="282.6" transform="rotate(-90 54 54)" >
+        </circle>
+        <!--
+        style="transition: stroke-dashoffset 900ms ease 0s;"
+        -->
+    </svg>
+    <span id="timer11" class="indicatorPercentage--b2c08" style="color: rgb(255, 255, 255);">20</span>
+</div>
+</body>
+<script type="text/javascript">
+    var isTimer = 0;
+
+    let timerId = setInterval(function(){
+        var test11 = document.getElementById('timer11');
+        var test = document.getElementById('circle11');
+        const tempValue = 282.6*0.05*isTimer;
+        console.log(tempValue);
+        test.setAttribute('stroke-dashoffset', tempValue);
+        //test11.value = 10 - isTimer;
+        test11.innerHTML = 20 - isTimer;
+        if(isTimer === 20) {
+            isTimer = 0;
+        }
+
+        isTimer = isTimer + 1;
+    }, 1000);
+
+
+
+</script>
+</html>
