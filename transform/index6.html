@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <title>임수민 만세</title>
     <style>
-        body {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            background-color: #0d860d;
-        }
         div {
-            position: absolute;
             margin: 50px auto;
             width: 100px;
             height: 100px;
@@ -20,8 +13,6 @@
             background: #99cc99;
             font-size: 14px;
             transition: all ease 1s;
-            top: 15px;
-            left: 15px;
         }
 
         span {
@@ -52,14 +43,14 @@
             transform: rotate(45deg);
             transform-origin: 0 0;
         }
-
-        .box06:hover {
-            transform: translate(100px, 100px);
-        }
     </style>
 </head>
 <body>
     <span>transform-origin TEST</span>
-    <div class="box06">(1,1)</div>
+    <div class="box01">(50%,50%)</div>
+    <div class="box02">(100%,100%)</div>
+    <div class="box03">(100% 0)</div>
+    <div class="box04">(0,100%)</div>
+    <div class="box05">(0,0)</div>
 </body>
 </html>
